@@ -1,0 +1,135 @@
+body { 
+    height: 450vh;
+}
+
+.navContainer {
+    border:solid black;
+    height: 60px;
+    border-width:.2px;
+    display: flex;
+
+}
+
+.smIcons {
+    /* border:solid purple; */
+    margin-left: 65%;
+    padding: 5px;
+}
+
+.nikeIcon {
+    height: 60px;
+    margin-left: 3px;
+}
+.briefcase {
+    height: 35px;
+    margin-bottom: 14px;
+
+}
+
+.briefcase:hover {
+    height: 35px;
+    margin-bottom: 8px;
+    border:solid black;
+    border-width: .2px;
+    border-radius:50%;
+    background-color: lightgray;
+
+}
+
+.mglass {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.topScroll {
+    text-align: center;
+}
+
+.joiner {
+    text-align: center;
+}
+
+.mainPic {
+    width: 80%;
+}
+
+.ZoomX, .NikeAir {
+    height:600px;
+    width:600px;
+    
+}
+
+.midTitle {
+    font-size: 62px;
+}
+
+.oneLiner {
+    font-size: 22px;
+}
+
+.btnBlack {
+    border:solid black;
+    color: white;
+    background-color: black;
+    margin: 12px;
+    font-size: 32px;
+    width: 120px;
+    text-align: center;
+    border-radius: 22px;
+}
+
+.btnBlack:hover {
+    border:solid orange;
+    color: white;
+    background-color: green;
+    margin: 12px;
+    font-size: 32px;
+    width: 120px;
+    text-align: center;
+    border-radius: 22px;
+}
+
+.btnContainer {
+    display:flex;
+}
+
+.themeContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.themeTab:hover {
+    color:green;
+}
+
+.sneakerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border:solid darkgoldenrod;
+    margin: 6px;
+}
+
+.sneakerBox {
+    border:solid black;
+    width: 190px;
+    background-color: gray;
+    margin: 12px;
+}
+
+.sneakerBox:hover {
+    border:solid purple;
+    background-color: darkgray;
+}
+
+.sneakerInfo{
+    border:solid burlywood;
+    /* margin-top: 90%; */
+    height: 80px;
+    text-align: center;
+    background-color: #333C3F;
+    color: white;
+}
+
+.shoe1{
+    width: 100%;
+}

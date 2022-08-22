@@ -1,0 +1,43 @@
+.atmContainer{
+    border:solid blue;
+    height: 82vh;
+    margin:1em;
+    background-color: lightgray;
+    padding:1em;
+}
+
+.atmTitle {
+
+border:solid blue;
+font-size: 82px;
+text-align: center;
+color: blue;
+background-color: white;
+}
+
+.atmBody{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.btnLeft{
+    border:solid yellow;
+    height: 230px;
+    width: 20%;
+    
+}
+
+.Screen{
+    border:solid black;
+    height: 230px;
+    width: 60%;
+    background-color: black;
+
+}
+
+.btnRight{
+    border:solid orange;
+    height: 230px;
+    width: 20%;
+
+}

@@ -54,10 +54,36 @@ class Person {
     }
 
     ageUp(){
-        this.age++, this.height++, this.weight++, this.mood--, this.bankAccount + 10
+        this.age++, this.height++, this.weight++, this.mood--, this.bankAccount += 10
     }
     buyHamster(){
         this.hamsters.push(Hamster)
     }
         
 }
+
+//-----------------------------------------------------new Person Timmy
+
+const timmy = new Person('Timmy')
+    
+    timmy.age += 5
+
+    for(i=0;i<5;i++){
+        timmy.ageUp()
+    }
+
+    for(i=0;i<5;i++){
+        timmy.exercise()
+    }
+
+    timmy.age += 9
+
+    const gus = new Hamster('Gus')
+
+    timmy.buyHamster(gus)
+
+    timmy.age += 15
+
+    for(i=0;i<2;i++){
+        timmy.ageUp(), timmy.exercise()
+    }

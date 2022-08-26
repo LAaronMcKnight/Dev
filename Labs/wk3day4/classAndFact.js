@@ -91,17 +91,22 @@ const timmy = new Person('Timmy')
     //------------------------------------------------Chef make dinners
 
     class Dinner {
-        constructor(appetizer, entree, dessert)
-        this.appetizer = ''
-        this.entree = ''
-        this.dessert = ''
+        constructor(appetizer, entree, dessert){
+        this.appetizer = appetizer
+        this.entree = entree
+        this.dessert = dessert
+    }
     }
     
     class Chef {
         constructor(name){
+            this.name = name
+            this.hat = "chef hat"
 
-        }
-        makeDinner(){
-
-        }
     }
+    makeDinner(appetizer, entree, dessert){
+
+        Dinner.dessert = dessert, Dinner.entree = entree, this.appetizer = appetizer
+
+    }
+}   

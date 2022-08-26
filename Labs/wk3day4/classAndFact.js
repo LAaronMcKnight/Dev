@@ -85,5 +85,23 @@ const timmy = new Person('Timmy')
     timmy.age += 15
 
     for(i=0;i<2;i++){
-        timmy.ageUp(), timmy.exercise()
+        timmy.eat(), timmy.exercise()
+    }
+
+    //------------------------------------------------Chef make dinners
+
+    class Dinner {
+        constructor(appetizer, entree, dessert)
+        this.appetizer = ''
+        this.entree = ''
+        this.dessert = ''
+    }
+    
+    class Chef {
+        constructor(name){
+
+        }
+        makeDinner(){
+
+        }
     }

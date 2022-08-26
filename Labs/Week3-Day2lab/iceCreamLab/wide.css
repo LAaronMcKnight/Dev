@@ -1,0 +1,17 @@
+body{
+    background-color: peru;
+    color:blue;
+    font-family: cursive;
+}
+
+.parentContainer{
+    border:solid white;
+    height: 32vh;
+    width: 22vw;
+}
+
+.luigi{
+    width: 250px;
+    height: 100%;
+    border:solid forestgreen;
+}

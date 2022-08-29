@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.bojackAll{
+    display: none;
+}
+
+.breakingBadAll{
+    display: none;
+}
+
+
+body{
+    background-color: rgb(46, 134, 182);
+}
+
+.banner{
+    width:99.5vw;
+    height: 12vh;
+    border:solid rgb(194, 136, 42);
+    color: rgb(188, 216, 241);
+    text-align: center;
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 2.5px 3px rgb(194, 136, 42);
+    background: linear-gradient(90deg, rgba(129,197,255,1) 26%, rgba(11,157,255,1) 84%);
+    /* background-image: url(/images/blueyBanner.jfif); */
+    transition: 1.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner:hover{
+    color:blue;
+    text-shadow: 2.5px 3px rgb(186, 122, 25);
+}
+
+/* .bannerText{
+    
+} */
+
+.blueyAll{
+    display: contents;
+}
+
+.blueyMainPage{
+    height: 44vh;
+    width: 99.5vw;
+    border:solid black;
+    display: flex;
+    text-align: center;
+}
+
+.blueyOverlay{
+    position: absolute;
+    top:-20px;
+    left:0;
+    z-index: +2
+}
+
+.blueyIcon{
+    opacity: 1;
+    animation: fadeOut 10s linear infinite;
+}
+
+.blueyPhoto{
+    border:dashed rgb(112, 190, 208) .7px;
+    width: fit-content;
+    height: 42vh;
+    margin-left: 1.5vw;
+    margin-top: .5vh;
+    transition: 1s;
+}
+
+.seasons{
+    width: 250px;
+    height: 50px;
+    margin: 12px;
+    border:solid rgb(194, 136, 42);
+    color:rgb(53, 148, 230);
+    text-shadow: 1.5px 2px black;
+    font-size: x-large;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/clouds.png);
+    background-size: contain;
+}
+
+.dvdArt{
+    width: 360px;
+    height: 440px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 89, 255, 0.557);
+    border-radius: 10px;
+}
+
+.dvdImages{
+    position:fixed;
+    margin-top: 2vh;
+    z-index: +2;
+    
+}
+
+.dvd{
+    width: 269px;
+    height: 378px;
+}
+
+.bluey1{
+    display: none;
+}
+
+.bluey2{
+    display: none;
+}
+
+.bluey3{
+    display: none;
+}
+
+.seasons:hover{
+    border:solid darkblue;
+}
+
+.bluey{
+    width: 380px;;
+    height: 42vh;
+}
+
+/* .blueyContent{
+    border:solid red;
+} */
+
+
+
+.blueyBottom{
+    display: flex;
+}
+
+.blueyDescription{
+    height: 42vh;
+
+}
+
+.blueyText{
+    width: 860px;
+    height: 19vh;
+    margin: 5px;
+    /* border:solid black; */
+    font-size: 21px;
+    font-family:cursive ;
+    font-weight: 170;
+    text-align:left;
+    padding: 10px;
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

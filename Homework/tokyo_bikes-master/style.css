@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+.Header{
+    background-color: rgb(89, 121, 89);
+    border:solid black;
+    text-align: center;
+    width: 766px;
+    height: 26px;
+    color: white;
+    font-size: small;
+    margin-left: 2px;
+}
+
+.Header2 {
+    background-color: rgb(234, 236, 237);
+    width: 766px;
+    height: 42px;
+    border:solid black;
+    color: black;
+    z-index: +2;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2px;
+    justify-content: space-around;
+}
+
+.Shop{
+    margin-right: 10px;
+}
+.inside
+
+.logo{
+    margin-left: 18px;
+    margin-top: 2px;
+}
+
+.navs {
+    /* position: absolute; */
+    /* left: 0px;
+    top: 0px; */
+    z-index: +2;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* .inside {
+    margin-left: 40px;
+} */
+
+body{
+    background-color: rgb(234, 236, 237);
+    max-width: 766px;
+}
+
+.Main {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.bigPic {
+    max-width: 766px;
+    height: 766px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    z-index: +1;
+    margin-left: 2px;
+    border:solid rgba(0, 0, 0, 0.349)
+}
+
+.shopNow {
+    /* position:relative; */
+    position: static;
+    left: 0px;
+    top: 0px;
+    z-index: +1;
+    background-color: rgba(205, 205, 205, 0.551);
+    color:black;
+    height:170px;
+    min-width: 778px;
+    /* border:solid black; */
+    margin-top: 500px;
+    margin-right: 10px;
+
+}
+
+h3{
+    margin-left: 80px;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.pitch{
+    margin-left: 80px;
+}
+
+button{
+    margin-left: 80px;
+    height: 40px;
+    width: 100px;
+}
+
+button:hover{
+    background-color: goldenrod;
+    animation-name: buttonFlash;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+.pageBreak {
+    background-color: rgb(234, 236, 237);
+    padding: 40px;
+}
+
+.pageBreak2 {
+    background-color: rgb(234, 236, 237);
+    padding: 20px;
+}
+
+
+.lineUp{
+    background-color: rgb(234, 236, 237);
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.bikeList {
+    display: flex;
+    flex-flow: row wrap;
+    block-size: 766px;
+
+}
+
+.bike{
+    width: 250px;
+    height: 200px;
+}
+
+.bikeListing{
+    max-width:250px;
+    height:300px;
+}
+
+.bikeText{
+    text-align: center;
+    margin: -20px;
+}
+
+.End {
+    background-color:rgb(234, 236, 237);
+    padding: 10px;
+    color:black;
+    z-index: +2;
+    text-align: center;
+    font-size: small;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.endImages{
+    width: 240px;
+}
+
+#seeMore{
+    margin-right: 80px;
+}
+
+#seeAll{
+    margin-right: 80px;
+}
+
+#takeMe{
+    margin-right: 80px;
+}
+
+
+
+
+@keyframes buttonFlash{
+    0%{
+        background-color: cornflowerblue;
+        color: forestgreen
+    }
+    25%{
+        background-color: red;
+        color: cornflowerblue
+    }
+    50%{
+        background-color: blueviolet;
+        color: burlywood
+    }
+
+    75%{
+        background-color: darkgreen;
+        color: goldenrod;
+    }
+    100%{
+        background-color: darkgoldenrod;
+        color: blueviolet
+    }
+
+}

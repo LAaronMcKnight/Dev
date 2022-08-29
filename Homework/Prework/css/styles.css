@@ -1,0 +1,119 @@
+Body{
+  background: linear-gradient(90deg, rgba(255,172,107,1) 19%, rgba(232,151,238,1) 50%, rgba(166,227,141,0.9836309523809523) 95%);
+}
+  h2{
+    color: #ffae59;
+    Font-family: cursive;
+    Font-weight: 500px;
+    Text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px black;
+    font-style: oblique;
+  }
+
+  h3{
+    color: #B0FFDF;
+    font-weight: 350px;
+    text-shadow: 1.5px 1.5px black;
+    text-align: center;
+  }
+
+  h4{
+    color: Purple;
+    Font-weight: 300px;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  p{
+    text-align: center;
+    font-weight: 600;
+  }
+
+  a{
+    color: "purple";
+    text-align: center;
+  }
+
+  li{
+    color: #673147;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+ul{
+  list-style-position: inside;
+}
+
+table{
+  padding: 3px;
+  border-width: 20;
+}
+
+#DivList{
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  position: static;
+}
+
+#photo{
+  text-align: center;
+}
+
+#Fam2{
+  margin: 0 auto;
+  width: 400px;
+}
+
+#codeTable{
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(163,226,127);
+}
+
+#codeTable:hover{
+  background-color: #ffae59;
+}
+
+
+#source1{
+  font-size: 10pt;
+  font-Family: oblique;
+}
+
+#NameNav{
+  color: #e599d2;
+  Position: fixed;
+  text-align: left;
+  border: 1;
+}
+
+#Name{
+  color: #e599d2;
+}
+
+#Fam2{
+  margin: 0 auto;
+  width: 100;
+  height: 100;
+  padding: 5;
+  border: 5px solid black;
+  background-color: rgb(163,226,127);
+}
+
+#progpar{
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ffae59;
+}
+
+#Fam1{
+  text-align: center;
+  font-style: italic;
+}
+
+img{
+  text-align: center;
+}

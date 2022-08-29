@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(96, 84, 104);
+}
+
+.layer2{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: +2;
+    color: white;
+    display: flex;
+
+    animation-name: textBump;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.myName{
+    color: #ffff8f
+}
+
+
+.intRes{
+    animation-name: colorFlash;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-play-state: running;
+}
+
+.pageHeader{
+    border:solid black;
+    height: 12vh;
+    width: 100%;
+    background-image: url(/images/bannergif.gif);
+}
+
+.myPhoto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    height: 140px;
+    width: 140px;
+    margin-left: 72vw;
+    margin-top: 10px;
+    border:solid #ffff8f;
+    border-radius: 50px;
+    background-image: url(/images/chuckie.gif);
+    background-size: 140px 140px;
+}
+
+.myPhoto:hover{
+    border-color: #7b0da8;
+    
+}
+
+.pageMain{
+    border:solid #7b0da8;
+    width: 100%;
+    height: 88vh;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:#ffff8f
+}
+
+.pageBody {
+    height: 88vh;
+    width: 70%;
+    border:solid #a87b0d;
+    margin-left: 15%;
+    
+}
+
+.myDescription{
+    color:rgb(249, 218, 181);
+    height: 44vh;
+    /* border:dashed #5c3d68; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+
+#aboutMeHead{
+    text-decoration: underline;
+    text-shadow: 2.8px 2.8px black;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.aboutMeText{
+    margin-left: 60px;
+    text-shadow: 2.4px 2.4px black;
+    max-width: 54vw;
+    /* display: flex; */
+}
+
+.jobHistory{
+    color:rgb(249, 218, 181);
+    height: 44vh;
+    /* border:dashed #5c3d68; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+
+#jobHistoryHead{
+    text-decoration: underline;
+    text-shadow: 2.8px 2.8px black;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.jobDetails{
+    margin-left: 60px;
+    text-shadow: 2.4px 2.4px black;
+    max-width: 54vw;
+}
+
+
+
+.sideBar{
+    height: 88vh;
+    width: 14.5%;
+    border:solid #5c3d68;
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    
+
+}
+
+.funBtn{
+    width: 14vw;
+    height: 3.5vh;
+    margin-top: 2px;
+    font-weight: 650;
+    font-size: large;
+    border-radius: 12px;
+    background-color: beige;
+}
+
+button{
+    background-color: beige;
+}
+
+.infoBtns{
+    width: 14vw;
+    height: 3.5vh;
+    margin-top: 2px;
+    font-weight: 650;
+    font-size: large;
+    border-radius: 12px;
+    background-color: beige;
+}
+
+.infoBtns:hover{
+    background-color: #6a4f7d;
+    border-color:rgb(0, 111, 238);
+    color:rgb(0, 111, 238)
+}
+
+.funBtn:hover{
+    animation-name: buttonFlash;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    transition: .5s;
+
+}
+
+.btnSetTwo{
+    margin-top: 6vh;
+}
+
+.sideBar2{
+    height: 88vh;
+    width: 14.5%;
+    border:solid #5c3d68;
+    order: 3;
+    position:absolute;
+    margin-left: 85.5%;
+    color:#ffff8f;
+    
+
+}
+
+.hoverInfo{
+    position: absolute;
+    text-shadow: 2.4px 2.4px black;
+    background-color: #1451e13d;
+    width:fit-content;
+    border:dashed rgba(2, 56, 218, 0.459);
+    margin-top: 10px;
+    margin-left: 71vw;
+    visibility: hidden;
+}
+
+.funBox{
+    position:fixed;
+    width: 32px;
+    height: 30px;
+    background-color: black;
+    z-index: +5;
+    margin-left: 90vw;
+    margin-top: 20vh;
+    color:black
+}
+
+@keyframes colorFlash{
+    0%{
+        color: #ffff8f
+    }
+    25%{
+        color: #ec9e69
+    }
+    50%{
+        color: #d56073
+    }
+
+    75%{
+        color: #7a4579;
+    }
+    100%{
+        color: #fffc96
+    }
+}
+
+@keyframes buttonFlash{
+    0%{
+        background-color: rgb(134, 77, 181);
+        color: black
+    }
+    25%{
+        background-color: rgb(83, 153, 238);
+        color: rgb(102, 102, 102)
+    }
+    50%{
+        background-color: rgb(174, 28, 187);
+        color: black
+    }
+
+    75%{
+        background-color: rgb(184, 140, 221);
+        color: rgb(102, 102, 102);
+    }
+    100%{
+        background-color: darkgoldenrod;
+        color: black
+    }
+}
+
+@keyframes textBump{
+    0%{
+        font-size:1.32em;
+}20%{
+        font-size: 1.33em;
+}40%{
+        font-size: 1.34em;
+}60%{
+        font-size: 1.33em;
+}80%{
+        font-size: 1.325em;
+}100%{
+        font-size: 1.32em;
+}
+}
+

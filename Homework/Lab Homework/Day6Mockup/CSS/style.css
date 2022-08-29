@@ -1,0 +1,172 @@
+.NavBar {
+    background-color: black;
+    display: flex;
+    
+}
+
+.MCtitle { 
+    padding: 4px;
+    margin-top: 2px;;
+}
+
+.Overlay {
+    position: fixed;
+    display: flex;
+    color: white;
+    margin-left: 800px;
+    margin-top: 60px;
+    font-size: large;
+}
+
+.SignIn {
+    position: fixed;
+    display: flex;
+    color: white;
+    margin-left: 980px;
+    margin-top: 60px;
+    font-size: large;
+}
+
+.SignIn:hover {
+    color: rgb(8, 102, 185);
+    text-decoration: underline;
+    text-decoration-color: rgb(201, 201, 201);
+}
+
+.Overlay:hover {
+    color: rgb(8, 102, 185);
+    text-decoration: underline;
+    text-decoration-color: rgb(201, 201, 201);
+}
+
+.SearchBar {
+    margin-top: 50px;
+}
+
+input { 
+    border-radius: 5px;
+    height: 40px;
+    width: 360px;
+}
+
+
+.SearchBtn {
+    height: 34px;
+    font-size: 140%;
+    border-radius: 6px;
+    background-color: rgba(63, 153, 255, 0.947);
+}
+
+.SearchBtn:hover {
+    background-color: rgb(15, 184, 246);
+    border:solid rgb(126, 104, 155);
+    border-width: 2px;
+}
+
+.SideNav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border:solid black;
+    
+}
+
+.NavLink {
+    display: flex;
+}
+
+.SiteBody {
+    display: flex;
+    padding: 1px;
+    
+}
+
+.topPage {
+    display: flex;
+    justify-content: flex-start;
+    border:solid lightslategray;
+
+}
+
+.sidePics {
+    display: flex;
+    flex-flow: wrap column;
+    padding: 6px;
+    justify-content: space-between;
+}
+
+
+.sidePic1, .sidePic2, .sidePic3 {
+    height: 110px;
+    width: 360px;
+}
+
+.popCatHead {
+    margin-left:100px;
+}
+
+.popCats {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    border:solid rgb(100, 73, 5);
+    border-width: 2px;
+    padding: 1px;
+}
+
+.catName {
+    border:solid rgb(14, 0, 19);
+    border-width: 2px;
+}
+
+.catName:hover {
+    border:dashed goldenrod;
+}
+
+.catTitle {
+    text-align: center;
+    font-size: larger;
+    font-weight: 200;
+}
+
+body {
+    background-image: url(https://64.media.tumblr.com/5af922905fee40c3c74d123d6bbd1de3/tumblr_nyolmrFSnH1sr8cguo1_500.gifv);
+}
+
+#MonitorBody {
+    display: flex;
+    
+}
+
+.LeftBar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
+.BannerMon {
+    height: 400px;
+    width: 900px;
+    margin-top: 10px;
+}
+
+#checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.topPageMon {
+    padding: 10px;
+    border:dashed darkslateblue;
+}
+
+.RightBar {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 920px;
+    margin-bottom: 600px;
+}
+

@@ -1,0 +1,27 @@
+.pageMain{
+    
+}
+
+.card{
+    width: 50%;
+}
+
+.popOut{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 46vw;
+}
+
+.dropDown{
+    position: absolute;
+    /* width: 30%;
+    height: fit-content; */
+    top:10vh;
+    left: 0;
+    z-index: +2;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

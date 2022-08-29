@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Interactive Resume</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="rollSound"><source src="/rolloverUI.mp3" /></audio>
+
+    <!------>
+
+    <div class="layer2">
+      <div class="myName">
+        <h1>Luthor Aaron McKnight &nbsp; -</h1>
+      </div>
+      <div class="intRes">
+        <h1>&nbsp Interactive Resume</h1>
+
+        <div class="myPhoto" onmouseenter="showContact(), playRollSound()" onmouseleave="hideContact()"></div>
+      </div>
+    </div>
+
+    <!------>
+
+    <div class="pageHeader"></div>
+
+    <div class="pageMain">
+      <div class="pageBody">
+        <div class="myDescription">
+          <h2 id="aboutMeHead">About Me:</h2>
+          <br>
+          <div class="aboutMeText">
+            <h4> &nbsp </h4>
+            <p>- A student at Per 
+              Scholas pursuing an entry level position in Software Engineering</p>
+              <br>
+            <p>- A person who understands the objective and utilizes my strengths to help accomplish that goal in the most efficient way possible.</p>
+            <br>
+            <p>- Seeking a career in software to provide for my family, by establishing a career in a growing field with job security and room for advancement, skill growth, and self-expression.</p>
+            <br>
+            <p>- A diverse set of life experiences as a developer, such as background in working directly with clients to ensure clear communication, and customer satisfaction in the end result of projects. Experience in more "blue collar" industries like construction and truck driving, which demands a hard work ethic.</p>
+            <br>
+            <p>- Strong desire to grow as a developer, and as a person, by using and sharpening my skills on the job. Prepared to tackle and master future technologies, never growing complacent.</p>
+            <br>
+            <p>- Planning to be an essential and invaluable member of your team, and in a year helping new developers that are where I am now.</p>
+            <br>
+          </div>
+        </div>
+
+        <!------------>
+
+          <div class="jobHistory">
+            <h2 id="jobHistoryHead">Job History</h2>
+            &nbsp;<br>
+            &nbsp;
+            <div class="jobDetails">
+              <h4>Edora Logistics</h4>
+              <br>
+              <p>- Delivered packages in 16 - 24' box trucks. Made timely deliveries to customers homes on a scheduled basis, rerouting when self determined to meet deadlines. Made sure the customer had a hassle free and great experience.</p>
+              <br>
+              &nbsp;
+              
+              <h4>Redacted Contracting</h4>
+              <br>
+              <p>- Experienced in framing drywall, metal and wood stud framing in commercial / residential buildings, painting walls / trim,  cabinet installation, light electric, apartment turnover.
+              </p>
+              <br>
+              <p>-Primary skill-sets: All things finish carpentry | Deck construction & staining</p>
+              <br>
+              &nbsp;
+
+              <h4>Champion Windows</h4>
+              <br>
+              <p>- Hired into the screen dept.- cutting metal screen frames, fitting screens into said frames, and trimming excess material.<br> &nbsp; <br>- Promoted to level 4 Machine Operator on the glass line, where I operated the "Interceptor" machine - the most expensive piece of equipment the company had. I shaped the metal frames that bonded 2-pane glass together using butyl. Eventually charged with leading the glass line.</p>
+
+
+            </div>
+        </div>
+      </div>
+
+      <!----->
+
+      <div class="sideBar">
+        <div class="Btns">
+          <button class="funBtn" onmouseenter="playRollSound()">
+            Funky Button
+          </button>
+          &nbsp;
+          <button class="infoBtns" onmouseenter="playRollSound()">
+            Less-Funky Button
+          </button>
+
+          <div class="btnSetTwo">
+            <button
+              id="aboutMeBtn"
+              class="infoBtns"
+              onmouseenter="playRollSound()" onclick="aboutClick()"
+            >
+              About Me
+            </button>
+            &nbsp;
+            <button
+              id="jobHistoryBtn"
+              class="infoBtns"
+              onmouseenter="playRollSound()" onclick="jobClick()"
+            >
+              Job History
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!----->
+      <div class="sideBar2"></div>
+      <div class="hoverInfo">
+        <h3>Contact info</h3>
+        <br>
+        <div class="hoverText">
+          <h5>E-Mail: redacted@gmail.com</h5>
+          <h5>Phone: (513)xxx-xxxx</h5>
+          <h5>LinkedIn: ____</h5>
+          <h5>Zoom ID: ____</h5>
+          <br>
+          Cincinnati, OH 45247
+        </div>
+
+      </div>
+
+      <!-- <div class="funBox" onclick="boxMove()">
+    </div> -->
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>

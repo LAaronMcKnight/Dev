@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parentContainer{
+    border:solid white;
+    height: 32vh;
+    width: 22vw;
+}
+
+.luigi{
+    width: 50%;
+    height: 100%;
+    border:solid forestgreen;
+}

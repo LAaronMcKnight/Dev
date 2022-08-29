@@ -1,0 +1,61 @@
+.blueyAll{
+    display: none;
+}
+
+.bojackAll{
+    display: none;
+}
+
+
+
+body{
+    background-color: navajowhite;
+}
+
+.banner{
+    width:99.5vw;
+    height: 12vh;
+    border:solid rgb(194, 136, 42);
+    background-color: lightblue;
+    color: rgb(70, 158, 235);
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+    text-shadow: 2.5px 2.5px black;
+    /* background-image: url(/images/blueyBanner.jfif); */
+    background-position: left;
+    background-size: 48%;
+    transition: 1.2s;
+
+}
+
+.breakingBadAll{
+   display: flex;
+   background-image: url(/images/desert);
+}
+
+.breakingBadMainPage{
+    display: flex;
+    border:solid yellow;
+    color: rgb(222, 209, 209);
+    text-shadow: 2px 2px black;
+    width: 800px;
+    margin: 14px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(143, 84, 12, 0.413);
+    height: 600px;
+
+}
+
+.breakingBadPoster{
+    
+}
+
+.bbPoster{
+    margin-top: 10px;
+    width: 720px;
+    height: 1080px;
+    border:solid black;
+}
+

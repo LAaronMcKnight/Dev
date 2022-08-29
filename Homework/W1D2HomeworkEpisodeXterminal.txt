@@ -1,0 +1,107 @@
+Homework - Episode X: A New Terminal
+
+** cd ~                       **
+** cd c:/desktop/dev/homework **
+
+"Part I: Set the Scene
+Complete all work inside the galaxy-far-far-awayfolder.
+
+Create a directory called death_star, and make the following files inside of it: darth_vader.txt, princess_leia.txt, storm_trooper.txt"
+
+** mkdir galaxy-far-far-away **
+** cd galaxy-far-far-away**
+** mkdir death_star **
+** touch darth_vader.txt princess_leia.txt storm_trooper.txt **
+
+"In galaxy-far-far-away, make a directory named tatooineand create the following files in it: luke.txt, ben_kenobi.txt"
+
+** mkdir tatooine **
+** touch luke.txt ben_kenobi.txt **
+
+"Inside of tatooinemake a directory called millenium_falcon, and in it create: han_solo.txt, chewbaca.txt"
+
+** mkdir millenium_falcon **
+** touch han_solo.txt chewbaca.txt **
+
+"Part II: mv- rename
+You can rename a file using the mvcommand.
+
+Rename ben_kenobi.txtto obi_wan.txt"
+
+** mv ben_kenobi.txt obi_wan.txt **
+
+"Copy storm_trooper.txt from death_star to tatooine"
+
+** mv death_star/storm_trooper.txt tatooine/** <-- (my CD was galaxy-far-far-away) ** 
+
+"Move luke.txtand obi_wan.txtto the millenium_falcon
+Move millenium_falconout of tatooineand into galaxy-far-far-away
+Move millenium_falconinto death_star
+Move princess_leia.txtinto the millenium_falcon"
+
+** mv luke.txt obi_wan.txt tatooine/millenium_falcon/ **
+** mv millenium_falcon/ ../ **
+** mv millineum_falcon/ death_star/ **
+** cd ../../ **
+** mv princess_leia.txt millenium_falcon/ **
+// The whole gang is here!
+
+"Delete obi_wan.txt"
+
+** rm -r obi_wan.txt **
+// Good things never last
+
+
+"In galaxy-far-far-away, make a directory called yavin_4
+Move the millenium_falconout of the death_starand into yavin_4"
+
+** mkdir yavin_4/ **
+** mv millineum_falcon/ ../yavin_4/ **
+
+"Make a directory in yavin_4called x_wing
+Move princess_leia.txtto yavin_4and luke.txtto x_wing"
+
+** mkdir x_wing **
+** mv princess_leia.txt ../ **
+** mv luke.txt ../x_wing/ **
+
+"Move the millenium_falconand x_wingout of yavin_4and into galaxy-far-far-away
+In death_star, create directories for tie_fighter_1, tie_fighter_2and tie_fighter_3
+Move darth_vader.txtinto tie_fighter_1
+Make a copy of storm_trooper.txtin both tie_fighter_2and tie_fighter_3
+Move all of the tie_fightersout of the death_starand into galaxy-far-far-away"
+
+** mv millineum_falcon/ ../ && mv x_wing/ ../ **
+** mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3 **
+** mv darth_vader.txt tie_fighter_3/ **
+** cp storm_trooper.txt ../death_star/tie_fighter_1 && cp storm_trooper.txt ../death_star/tie_fighter_2 **
+** cd ../ **
+** mv tie_fighter_1 ../ && mv tie_fighter_2 ../ & mv tie_fighter_3 ../ **
+
+"Remove tie_fighter_2and tie_fighter_3"
+
+** rm -r tie_fighter_2 && rm -r tie_fighter_3 **
+
+"Touch a file in x_wingcalled the_force.txt
+Destroy the death_starand anyone inside of it
+Return x_wingand the millenium_falconto yavin_4
+Celebrate. You've reached the end of this homework :)"
+
+** cd x_wing/ **
+** touch the_force,txt **
+** rm -r death_star/ **
+** mv millineum_falcon/ yavin_4/ && mv x_wing/ yavin_4/ **
+
+woo
+
+
+
+
+
+
+
+
+
+
+
+

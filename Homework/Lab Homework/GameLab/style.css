@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    height: 99vh;
+    width: 99vw;
+    color: bisque;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#myCanvas {
+    background: rgb(114, 17, 179);
+    width: 480px;
+    height: 320px;
+    border:solid limegreen;
+    
+}
+
+.gameScreen{
+    width: 600px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:dashed gray;
+}

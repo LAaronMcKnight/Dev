@@ -1,0 +1,26 @@
+
+
+body{
+    background-color: black;
+    /* border:dashed goldenrod; */
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer{
+    border:solid white;
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameScreen{
+    border:dashed green;
+    width: 75vmin;
+    height: 75vmin;
+}

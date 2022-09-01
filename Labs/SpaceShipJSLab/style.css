@@ -72,8 +72,9 @@ body{
     flex-direction: column;
 }
 
-.enemy{
+.alienShip{
     background-image: url(/images/enemy.png);
+    background-size: contain;
     width: 12vmin;
     height: 12vmin;
 }

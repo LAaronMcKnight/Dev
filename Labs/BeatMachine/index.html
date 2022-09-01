@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<audio id="coinHandle1" src="/sounds/coinHandle1.mp3"></audio>
+<audio id="coinDrop" src="/sounds/coinHandleDrop.mp3"></audio>
+<audio id="coinLoad" src="/sounds/coinLoad.mp3"></audio>
+<audio id="laugh1" src="/sounds/evilLaugh.mp3"></audio>
+
+<body>
+    <h1>RTT-25000</h1>
+    <div class="soundTable">
+        <div class="row">
+            <div onClick="playSound(coinHandle1)" class="beatPad"></div>
+            <div onClick="playSound(coinDrop)" class="beatPad"></div>
+            <div onClick="playSound(coinLoad)" class="beatPad"></div>
+            <div onClick="playSound(laugh1)" class="beatPad"></div>
+        </div>
+        <div class="row">
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+        </div>
+        <div class="row">
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+        </div>
+        <div class="row">
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+            <div class="beatPad"></div>
+        </div>
+    </div>
+    <script src="app.js" async defer></script>
+</body>
+
+</html>

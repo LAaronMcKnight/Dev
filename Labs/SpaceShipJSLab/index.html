@@ -20,15 +20,11 @@
                     </div>
                     <div class="battleArea">
                         <div class="playerSide">
-                            <wrapper class="playerShips">
-                                
-                            </wrapper>
+                            
 
                         </div>
                         <div class="enemySide">
-                            <wrapper class="enemyShips">
-
-                            </wrapper>
+                            
                         </div>
                     </div>
                 </div>    
@@ -42,9 +38,9 @@
                             </div>
                         </div>
                         <div class="actionButtons">
-                            <button class="consoleButtons">Attack</button>
+                            <button class="consoleButtons" onclick="battle(USS_HelloWorld, enemyShips[0])">Attack</button>
                             <button class="consoleButtons">Flee</button>
-                            <button class="consoleButtons" onclick="spawnInvasion()">Next Wave</button>
+                            <button class="consoleButtons" onclick="spawnEnemy()">Next Wave</button>
 
                         </div>
                     </div>

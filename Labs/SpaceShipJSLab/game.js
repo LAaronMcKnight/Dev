@@ -19,12 +19,24 @@ const enemies = {
 
 function spawnEnemy() {
     const Enemy = {}
-    Enemy.hull = randomHull
-    Enemy.firepower = randomFirepower
-    Enemy.accuracy = randomAccuracy
+    Enemy.hull = Math.floor((Math.random() * 3 )) + 3
+    Enemy.firepower = Math.floor((Math.random() * 2 )) +2
+    Enemy.accuracy = Math.floor(((Math.random() * 2  ) +4))/10
     enemyShips.push(Enemy)
-    // return Enemy
+    
+    createEnemy();
 
+}
+
+const createPlayer = ()=>{
+    
+}
+
+const createEnemy = ()=>{
+    let enemy = document.createElement('div')
+    enemy.classList.add('alienShip')
+    let es = document.querySelector('.enemySide')
+    es.append(enemy)
 }
 
 function attack(attacker, target) {
@@ -36,6 +48,25 @@ function attack(attacker, target) {
     
 }
 
+
+// function battle(p1, p2){
+//     turn = 1
+
+//     while (p1.hull > 0 && p2.hull > 0) {
+//         if(turn % 2 !== 0){
+//             console.log(`Turn ${turn} (Player)`)
+//             attack(p1, p2)
+//             checkDeath()
+//             turn++
+//         }
+//         else if(turn % 2 === 0){
+//             console.log(`Turn ${turn} (Enemy)`)
+//             attack(p2, p1)
+//             checkDeath()
+//             turn++
+//         }
+//     }
+// }
 
 function battle(p1, p2){
     turn = 1
@@ -56,17 +87,6 @@ function battle(p1, p2){
     }
 }
 
-function battleFive(){
-    spawnInvasion(5)
-    while (enemyShips.length > 0){
-        battle(USS_HelloWorld, enemyShips[0])
-        if(USS_HelloWorld.hull > 0){
-        // if(confirm('Alien scum defeated! Press OK to continue, cancel to flee')){
-        //     window.location = '/index.html' } //
-        console.log(enemyShips)
-        }
-    }
-}
 
 
 
@@ -76,6 +96,8 @@ function checkDeath() {
     }else if (enemyShips[0].hull <= 0 || isNaN(enemyShips[0].hull)){
         console.log('Enemy ship destroyed!')
         enemyShips.shift()
+        let el = document.querySelector('.alienShip')
+        el.remove()
     }else{
         return
     }
@@ -86,7 +108,7 @@ function spawnInvasion(num){
     for(i = 1; i <= num; i++){
         spawnEnemy()
     }
-    showEnemies()
+    
 }
 
 // function showEnemies() {
@@ -99,15 +121,19 @@ function spawnInvasion(num){
 // }
 
 
+// this.div = document.createElement('div')
+//     this.div.className = "enemy"
+//     document.querySelector('.enemyShips').appendChild( this.div )
 
-// spawnInvasion(3)
-// console.log(USS_HelloWorld)
-// console.log(enemyShips)
-// battle(USS_HelloWorld, enemyShips[0])
-// console.log(enemyShips)
-// battle(USS_HelloWorld, enemyShips[0])
-// console.log(enemyShips)
-// battle(USS_HelloWorld, enemyShips[0])
-// console.log(enemyShips)
-showEnemies()
-// battleFive()
+
+// function battleFive(){
+//     spawnInvasion(5)
+//     while (enemyShips.length > 0){
+//         battle(USS_HelloWorld, enemyShips[0])
+//         if(USS_HelloWorld.hull > 0){
+//         // if(confirm('Alien scum defeated! Press OK to continue, cancel to flee')){
+//         //     window.location = '/index.html' } //
+//         console.log(enemyShips)
+//         }
+//     }
+// }

@@ -1,0 +1,29 @@
+.soundTable {
+    border: solid salmon;
+    height: 62vh;
+    /* background-image: url('https://3kie2h2bv1982onocv7b5lbz-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/Akai_mpd218-top.jpg%27); /
+    background-size: cover;
+}
+
+.row {
+    / border: solid green; */
+    margin: 1em;
+    display: flex;
+    padding: 3%;
+}
+
+.beatPad {
+    border: solid orange;
+    background-color: lightgray;
+    width: 90px;
+    height: 90px;
+    margin-left: 12px;
+}
+
+.beatPad:hover {
+    border: solid orange;
+    background-color: darkgray;
+    width: 90px;
+    height: 90px;
+    margin-left: 12px;
+}

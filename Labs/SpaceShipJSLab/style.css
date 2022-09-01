@@ -12,6 +12,8 @@ body{
 
 .gameContainer{
     border:solid white;
+    background-image: url(/images//spacePixel.gif);
+    background-size: contain;
     width: 80vmin;
     height: 80vmin;
     display: flex;
@@ -20,7 +22,167 @@ body{
 }
 
 .gameScreen{
-    border:dashed green;
+    /* border:dashed green; */
     width: 75vmin;
     height: 75vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameScreenTop{
+    display:flex;
+    align-items: center;
+    border:solid rgba(99, 97, 97, 0.794);
+    height: 54vmin;
+    width: 74vmin;
+    padding: .5vmin;
+}
+
+.battleArea{
+    /* border:dashed lightgreen; */
+    width: 60vmin;
+    height: 52vmin;
+    margin: 1vmin;
+    order: 1;
+    display: flex;
+    align-items: center;
+    padding: .5vmin;
+    justify-content: space-between;
+}
+
+.playerSide{
+    border:dashed white;
+    width: 15vmin;
+    height: 52vmin;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enemySide{
+    border:dashed orange;
+    width: 15vmin;
+    height: 52vmin;
+    padding: 0;
+    /* margin-left: 30vmin; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enemy{
+    background-image: url(/images/enemy.png);
+    width: 12vmin;
+    height: 12vmin;
+}
+
+.hudBar{
+    border:solid rgba(99, 97, 97, 0.794);
+    width: 10vmin;
+    height: 52vmin;
+    margin: 1vmin;
+    order: 2;
+}
+
+.gameScreenBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74vmin;
+    
+}
+
+.consoleArea{
+    background-image: url(/images/robCo.png);
+    background-position: center 10%;
+    background-size: 125%;
+    border:solid rgba(99, 97, 97, 0.794);
+    width: 50vmin;
+    height: 18vmin;
+    margin-top: 1vmin;
+    
+}
+
+.console{
+    /* border:solid green; */
+    width: 50vmin;
+    height: 13vmin;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.textBox{
+    /* border:dashed green; */
+    width: 49vmin;
+    height: 7vmin;
+    overflow-y: scroll;
+    color: #8dd689d3;
+    padding: .5vmin;
+    margin-bottom: 1vmin;
+}
+
+.actionButtons{
+    /* position: relative; */
+    /* border:dashed rgba(255, 166, 0, 0.306); */
+    width: 49.2vmin;
+    height: 4.2vmin;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.playerPhoto{
+    border:solid rgba(99, 97, 97, 0.794);
+    width: 18vmin;
+    height: 18vmin;
+    margin-top: 1vmin;
+    margin-left: 5vmin;
+}
+
+.consoleButtons{
+    width: 6vmin;
+    height: 4vmin;
+    background-color: rgba(58, 194, 46, 0.47);
+}
+
+.consoleButtons:hover{
+    background-color: rgba(58, 194, 46, 0.27);
+}
+
+.consoleButtons:active{
+    transform: scale(.965);
+}
+
+
+
+*::-webkit-scrollbar {
+    width: 7px;
+    width: 7px;
+}
+  *::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #0E4C01;
+}
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: #1DC60B;
+}
+
+  *::-webkit-scrollbar-track:active {
+    background-color: #40AE18;
+}
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #2AA717;
+}
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #0E4C01;
+}
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #0E4C01;
 }

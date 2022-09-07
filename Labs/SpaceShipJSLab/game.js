@@ -1,6 +1,8 @@
-let randomHull = Math.floor((Math.random() * 3 )) + 3
-let randomFirepower = Math.floor((Math.random() * 2 )) +2
-let randomAccuracy = Math.floor(((Math.random() * 2  ) +4))/10
+// let randomHull = Math.floor((Math.random() * 3 )) + 3
+// let randomFirepower = Math.floor((Math.random() * 2 )) +2
+// let randomAccuracy = Math.floor(((Math.random() * 2  ) +4))/10
+
+let consoleText = document.querySelector('.textBox')
 
 const USS_HelloWorld = {
     hull: 20,
@@ -29,7 +31,10 @@ function spawnEnemy() {
 }
 
 const createPlayer = ()=>{
-    
+    let player = document.createElement('div')
+    player.classList.add('playerShip')
+    let ps = document.querySelector('.playerSide')
+    ps.append(player)
 }
 
 const createEnemy = ()=>{
@@ -47,26 +52,6 @@ function attack(attacker, target) {
     }else{ console.log('Attack missed!')}
     
 }
-
-
-// function battle(p1, p2){
-//     turn = 1
-
-//     while (p1.hull > 0 && p2.hull > 0) {
-//         if(turn % 2 !== 0){
-//             console.log(`Turn ${turn} (Player)`)
-//             attack(p1, p2)
-//             checkDeath()
-//             turn++
-//         }
-//         else if(turn % 2 === 0){
-//             console.log(`Turn ${turn} (Enemy)`)
-//             attack(p2, p1)
-//             checkDeath()
-//             turn++
-//         }
-//     }
-// }
 
 function battle(p1, p2){
     turn = 1
@@ -93,8 +78,10 @@ function battle(p1, p2){
 function checkDeath() {
     if (USS_HelloWorld.hull <= 0 || isNaN(USS_HelloWorld.hull)){
         console.log('USS HelloWorld has been destroyed..')
+        consoleText.innerHTML = 'USS HelloWorld has been destroyed..'
     }else if (enemyShips[0].hull <= 0 || isNaN(enemyShips[0].hull)){
         console.log('Enemy ship destroyed!')
+        consoleText.innerHTML = 'Enemy ship destroyed!'
         enemyShips.shift()
         let el = document.querySelector('.alienShip')
         el.remove()
@@ -109,6 +96,13 @@ function spawnInvasion(num){
         spawnEnemy()
     }
     
+}
+
+function flee(){
+    if (confirm('You are about to flee, are you sure you want to proceed?')){
+        window.location = '/index.html'
+    }
+    return
 }
 
 // function showEnemies() {

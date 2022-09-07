@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    
+}
+
+.pageContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.radioContainer{
+    border:solid blue;
+    height: 40vmin;
+    width: 70vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radioModule{
+    border:dashed red;
+    height: 22.6vmin;
+    width: 40vmin;
+}

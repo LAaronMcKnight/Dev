@@ -34,5 +34,5 @@ const moreFruits = [
     }
 ]
 
-// module.exports = moreFruits, fruits;
-module.exports = fruits
+module.exports.array = fruits
+module.exports.array2 = moreFruits

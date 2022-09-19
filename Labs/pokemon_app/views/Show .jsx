@@ -4,7 +4,7 @@ class Show extends React.Component {
         const pokemon = this.props.pokemon
 
         return(
-            null
+            hi
         )
     }
 }

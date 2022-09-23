@@ -13,7 +13,7 @@ class New extends React.Component {
             <br />
             <input type="textarea" name="entry" />
             <br />
-            Ship in need of repairs?<input type="checkbox" name="shipIsBroken" />
+            Ship fully functional?<input type="checkbox" name="shipIsBroken" />
             <br />
             <input type="submit" name="submitBtn" value="Submit Log" />
           </form>

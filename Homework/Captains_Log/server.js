@@ -65,6 +65,8 @@ const Log = require('./models/logs')
         })
     })
 
+
+    //-----------------------------------------------EDIT
     app.get('/logs/:id/edit', (req, res) => {
         Log.findById(req.params.id, (err, foundLog) => {
             console.log(err)
@@ -75,6 +77,39 @@ const Log = require('./models/logs')
             } else {
                 res.send('Error')
             }
+        })
+    })
+
+    app.post('/logs', (req, res) => {
+        if (req.body.shipIsBroken === "on") {
+            req.body.shipIsBroken = true;
+        }else{
+            req.body.shipIsBroken = false;
+        }
+        Log.create(req.body, (err, createdLog) => {
+            console.log(err)
+            console.log("Just Added : ", createdLog)
+        })
+        res.redirect('/logs')
+    })
+
+    app.put("/logs/:id", (req, res) => {
+        if (req.body.shipIsBroken === "on") {
+        req.body.shipIsBroken = true;
+        } else {
+        req.body.shipIsBroken = false;
+        }
+        Log.findByIdAndUpdate(req.params.id, req.body, (err, updatedLog) => {
+            console.log(err)
+        console.log(updatedLog);
+        res.redirect(`/logs/`);
+        });
+    });
+
+    app.delete("/logs/:id", (req, res) => {
+        Log.findByIdAndRemove(req.params.id, (err) => {
+            console.log(err)
+            res.redirect("/logs")
         })
     })
 

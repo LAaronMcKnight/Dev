@@ -16,6 +16,7 @@ mongoose.connection.once('open', ()=> {
 
 // informs application that env variables are present and links them to it
 
+const Fruit = require('./models/fruits')
 const fruits = require('./models/fruits')
 
 
@@ -36,6 +37,7 @@ app.use(express.urlencoded({extended:false}));
 
 app.get('/fruits', (req, res) =>{
     res.render('Index', {fruits})
+    // res.render('Index')
 })
 
 app.get('/fruits/new', (req, res) => {
@@ -49,12 +51,15 @@ app.post('/fruits', (req, res)=>{
     } else { //if not checked, req.body.readyToEat is undefined
         req.body.readyToEat = false; //do some data correction
     }
-    fruits.push(req.body);
+    Fruit.create(req.body, (createdFruit))
+    res.send(createdFruit)
+
+    // fruits.push(req.body);
     console.log(fruits);
     res.send('data received');
     res.redirect('localhost:5000/fruits'); //send the user back to /fruits
 });
-
+////   ***** Need to define createdFruit somehow
 
 
 app.get('/fruits/:indexOfFruitsArray', (req, res) =>{

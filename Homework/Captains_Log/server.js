@@ -21,7 +21,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 //
 
 //enable body parser
-app.use(express.urlencoded({}))
+app.use(express.urlencoded({extended: false}))
 
 app.use(methodOverride("_method"))
 
@@ -43,8 +43,8 @@ mongoose.connection.once("open", () => {
   // ------------------------------------------ routes ----------
 
 
-    app.get('New', (req, res) => {
-        res.send('new')
+    app.get('/new', (req, res) => {
+        res.render('New')
     })
 
 

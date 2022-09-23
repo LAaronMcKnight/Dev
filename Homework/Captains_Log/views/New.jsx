@@ -1,5 +1,8 @@
 const React = require("react");
 const DefaultLayout = require("./layouts/Default");
+
+
+
 class New extends React.Component {
   render() {
     return (
@@ -14,6 +17,9 @@ class New extends React.Component {
             <br />
             <input type="submit" name="submitBtn" value="Submit Log" />
           </form>
+          <br />
+          <br />
+          <a href="http://localhost:4000/"><button>Back</button></a>
         </div>
       </DefaultLayout>
     );

@@ -1,7 +1,14 @@
 const React = require("react");
 const DefaultLayout = require("./layouts/Default");
 
-
+const newStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  textAlign: 'center',
+  alignItems: 'center',
+  border: 'dashed black',
+  margin: '10px',
+}
 
 class New extends React.Component {
   render() {
@@ -9,9 +16,10 @@ class New extends React.Component {
       <DefaultLayout title={"Captain's Log"}>
         <div>
           <form action="/logs" method="POST">
-            Title: <input type="text" name="title" />
+            Title: <input type="text" name="title" required />
             <br />
-            <input type="textarea" name="entry" />
+            Entry: 
+            <input type="textarea" name="entry" required/>
             <br />
             Ship fully functional?<input type="checkbox" name="shipIsBroken" />
             <br />
@@ -19,8 +27,8 @@ class New extends React.Component {
           </form>
           <br />
           <br />
-          <a href="http://localhost:4000/"><button>Back</button></a>
         </div>
+          <a href="http://localhost:4000/"><button>Back</button></a>
       </DefaultLayout>
     );
   }

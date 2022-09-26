@@ -30,6 +30,8 @@ app.use((req, res, next) => {
     next()
 })
 
+app.use(express.static("public"))
+
 // 
 
 mongoose.connect(process.env.MONGO_URI, {
@@ -43,6 +45,10 @@ mongoose.connection.once("open", () => {
 //
 
 const Log = require('./models/logs')
+
+
+
+
 
   // ------------------------------------------ routes ----------
 
@@ -67,19 +73,9 @@ const Log = require('./models/logs')
 
 
     //-----------------------------------------------EDIT
-    app.get('/logs/:id/edit', (req, res) => {
-        Log.findById(req.params.id, (err, foundLog) => {
-            console.log(err)
-            if (!err) {
-                res.render("Edit", {
-                    log: foundLog,
-                })
-            } else {
-                res.send('Error')
-            }
-        })
-    })
+    
 
+    // ------------------------------POST created object element
     app.post('/logs', (req, res) => {
         if (req.body.shipIsBroken === "on") {
             req.body.shipIsBroken = true;
@@ -92,27 +88,42 @@ const Log = require('./models/logs')
         })
         res.redirect('/logs')
     })
+    
+    app.get('/logs/:id/edit', (req, res) => {
+        Log.findById(req.params.id, (err, foundLog) => {
+            console.log(err)
+            if (!err) {
+                res.render("Edit", {
+                    log: foundLog,
+                })
+            } else {
+                res.send('Error')
+            }
+        })
+        
+    })
 
+    //------------------------------PUT the edit info INTO 1 specific element(id)
     app.put("/logs/:id", (req, res) => {
         if (req.body.shipIsBroken === "on") {
-        req.body.shipIsBroken = true;
+            req.body.shipIsBroken = true;
         } else {
-        req.body.shipIsBroken = false;
+            req.body.shipIsBroken = false;
         }
         Log.findByIdAndUpdate(req.params.id, req.body, (err, updatedLog) => {
             console.log(err)
-        console.log(updatedLog);
-        res.redirect(`/logs/`);
+            console.log(updatedLog);
+            res.redirect(`/logs/`);
         });
     });
-
+// ---------------------------------------------DELETE
     app.delete("/logs/:id", (req, res) => {
         Log.findByIdAndRemove(req.params.id, (err) => {
             console.log(err)
             res.redirect("/logs")
         })
     })
-
+//-------------------------------------------SEED default logs for testing
     app.get('/seed', (req, res) => {
         Log.create([
             {

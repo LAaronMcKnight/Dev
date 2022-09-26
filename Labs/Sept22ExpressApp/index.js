@@ -111,7 +111,7 @@ mongoose.connect(process.env.MONGO_URI, {
         Student.findByIdAndUpdate(req.params.id, req.body, (err, updatedStudent) => {
             console.log(err)
         console.log(updatedStudent);
-        res.redirect(`/students/${req.params.id}`);
+        res.redirect(`/students`);
         });
     });
 
@@ -162,6 +162,6 @@ mongoose.connect(process.env.MONGO_URI, {
 
 
 // ---------------------------
-app.listen('3000', () => {
-    console.log("Listening on port 3000")
+app.listen('4000', () => {
+    console.log("Listening on port 4000")
 })

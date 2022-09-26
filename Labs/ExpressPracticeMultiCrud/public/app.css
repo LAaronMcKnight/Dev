@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(6, 0, 12);
+    color: rgb(251, 251, 98)
+}
+
+.indexPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#planetBtns{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-left: 10px;
+}
+.header {
+    width: 100%;
+    height: 15%;
+    border:solid rgb(50, 12, 121);
+    background-color: rgba(60, 16, 182, 0.5);
+    text-align: center;
+}
+
+.headerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planets {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.stars {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90vw;
+}
+
+#planetMap {
+    width: 80vw;
+    height: fit-content;
+    border:solid blue;
+    background-color: rgba(38, 2, 71, 0.778);
+    margin: 20px;
+    transition: 1s;
+}
+
+#starMap {
+    width: 80vw;
+    height: fit-content;
+    border:solid blue;
+    background-color: rgba(38, 2, 71, 0.778);
+    margin: 20px;
+    transition: 1s;
+}
+
+#starMap:hover {
+    transform:scale(1.2);
+    border:solid gold;
+    background-color: rgba(42, 17, 71, 0.83);
+}
+
+#planetMap:hover {
+    transform:scale(1.2);
+    border:solid gold;
+    background-color: rgba(42, 17, 71, 0.83);
+}
+
+#planetBtns{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.Btn {
+    color: rgb(251, 251, 98);
+    background-color: rgba(38, 2, 71, 0.778);
+    border-color: rgba(38, 2, 71, 0.778);
+    transition: 1s;
+}
+
+.Btn:hover {
+    color: rgb(251, 251, 189);
+    background-color: black;
+    border-radius: 5px;
+}
+
+.bodyExtra {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+

@@ -6,6 +6,8 @@ class Show extends React.Component {
     const {logs} = this.props;
     console.log(logs)
 
+    
+
     return (
       <div>
         <DefaultLayout title = {"Log data"}>
@@ -27,7 +29,7 @@ class Show extends React.Component {
               )
             })}
           </ul>
-          <a href="http://localhost:4000/"><button>Return</button></a>
+          <a href="http://localhost:4000/"><button>Back</button></a>
         </DefaultLayout>
       </div>
     )

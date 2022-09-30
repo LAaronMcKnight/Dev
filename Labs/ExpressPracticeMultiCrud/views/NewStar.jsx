@@ -16,7 +16,7 @@ class NewStar extends React.Component {
                     <form action="/stars" method="POST">
                         Name:  <input type="text" name="name" required />
                         <br />
-                        Orbiting Panets: <input type="text" name="numOfPlanets" required />
+                        Orbiting Planets: <input type="text" name="numOfPlanets" required />
                         <br />
                         Classification: <select name="class">
                             <option value="Blue Star">Blue Star</option>
@@ -34,7 +34,7 @@ class NewStar extends React.Component {
                         <br />
                         Description: <input type="textarea" name="description" required />
                         <br />
-                        <input type="submit" value="Submit Planet"></input>
+                        <input type="submit" value="Submit Star"></input>
                     </form>
                     </div>
                     <div className="bodyExtra">

@@ -16,7 +16,7 @@ class NewPlanet extends React.Component {
                     <form action="/planets" method="POST">
                         Planet Name:  <input type="text" name="name" required />
                         <br />
-                        # of Moons: <input type="text" name="numOfMoons" required />
+                        Number of Moons: <input type="text" name="numOfMoons" required />
                         <br />
                         Has Rings?: <input type="checkbox" name="hasRings" />
                         <br />

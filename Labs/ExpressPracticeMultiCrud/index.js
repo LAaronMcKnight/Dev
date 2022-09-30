@@ -74,6 +74,18 @@ app.get('/stars', (req, res) => {
     })
 })
 
+//--------------------------------------------------- NEW / Create
+
+app.get('/planets/new', (req, res) => {
+  res.render('NewPlanet', {})
+})
+
+
+
+app.get('/stars/new', (req, res) => {
+  res.render('NewStar', {})
+})
+
 app.get('/planets/:id/', (req, res) => {
     Planet.findById(req.params.id, (err, foundPlanet) => {
         console.log(err)
@@ -101,7 +113,7 @@ app.post('/planets', (req, res) => {
         console.log(err)
         console.log("Added: ", createdPlanet)
     })
-    res.redirect("/")
+    res.redirect("/planets")
 })
 
 app.post('/stars', (req, res) => {
@@ -176,17 +188,7 @@ app.delete("/stars/:id", (req, res) => {
     })
 })
 
-//--------------------------------------------------- NEW / Create
 
-app.get('/planets/new', (req, res) => {
-    res.render('NewPlanet', {})
-})
-
-
-
-app.get('/stars/new', (req, res) => {
-    res.render('NewStar', {})
-})
 
 
 

@@ -33,16 +33,18 @@ function App() {
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1 //Makeshift ID, server would generate automatically
 
-    const newTask = { id, ...task } 
+    const newTask = { id, ...task }  //pass in the id and ...the rest of the task
     // newTask comprised of a random ID + the task, day, and reminder parameters that were passed
     setTasks([...tasks, newTask])
     // copy current tasks array and add new object
   }
 
+
   //Delete Task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id)) // returns new task array composed of tasks for which the above argument returned true 
   }
+
 
   //Toggle Reminder
   const toggleReminder = (id) => {

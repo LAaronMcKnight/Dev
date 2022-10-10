@@ -1,0 +1,45 @@
+body {
+  background-color: lemonchiffon;
+}
+
+.receiptTitle {
+  color: blue;
+  border: solid lightblue;
+  width: 400px;
+  text-align: center;
+  
+}
+
+.orderList {
+  padding: 1em;
+}
+
+.listItem {
+  width: 300px;
+  margin: 0.5em auto;
+  border: solid salmon;
+  font-size: 24px;
+  border-radius: 6px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+}
+
+.addOrderForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.cart {
+  display: flex;
+  justify-self: end;
+}
+
+#cartPng {
+  width: 68px;
+  height: 68px;
+}

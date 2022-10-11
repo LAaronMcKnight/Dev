@@ -47,7 +47,15 @@ body{
 }
 
 .header {
-  background-color:firebrick;
+  background-color:rgb(197, 33, 33);
+  border: solid black 1px;
+}
+
+.fun {
+  font-size: x-large;
+  position: absolute;
+  top: 10%;
+  animation: funFlash running infinite ease-in-out 8s;
 }
 
 .main {
@@ -59,10 +67,54 @@ body{
   height: 100vh;
   text-align: center;
   color: white;
+  text-shadow: black 2px 2px 2px;
+}
+
+h3:hover {
+  color: orange;
+  text-shadow: black 3px 3px 2px;
 }
 
 .mainDisplay {
+  background-color: rgb(203, 33, 33);
   width: 40%;
   height: 60%;
   border:solid black 2px;
+  background-image: url(https://wallpaperaccess.com/full/5818315.png);
+  background-position: center 72%;
+  background-size: cover;
+}
+
+.sprites {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#pokemonImage {
+  scale: 142%;
+  transition: .8s;
+}
+#pokemonImage:hover {
+  scale: 220%;
+}
+
+@keyframes funFlash {
+  0%{
+    color: red;
+    top: 10%;
+  }25%{
+    color: purple;
+  }50%{
+    color: blue;
+    top: 15%;
+  }72%{
+    color: green;
+  }84%{
+    color: yellow;
+  }95%{
+    color: orange;
+  }100%{
+    color: red;
+  }
 }

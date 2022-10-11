@@ -23,12 +23,15 @@ function App() {
   };
 
   useEffect(() => {
-    getPokemon('pikachu')
+    getPokemon('pikachu') // make random pokemon? pretty up search bar ' add favorites
   }, []);
 
 
   return (
     <div className="main">
+      <div className="fun">
+        <h2>Gaming in progress....</h2>
+      </div>
       <div className="mainDisplay">
       <Header />
       Search the Pokemon Database

@@ -23,14 +23,14 @@ function App() {
   };
 
   useEffect(() => {
-    getPokemon('pikachu') // make random pokemon? pretty up search bar ' add favorites
+    getPokemon(`${Math.floor(Math.random() * 900 )}`) 
   }, []);
 
 
   return (
     <div className="main">
       <div className="fun">
-        <h2>Gaming in progress....</h2>
+        <h2>.</h2>
       </div>
       <div className="mainDisplay">
       <Header />

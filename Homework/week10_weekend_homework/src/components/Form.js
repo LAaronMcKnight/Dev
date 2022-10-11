@@ -13,6 +13,11 @@ export default function Form (props) {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+  // const randomPoke = () => {
+  //   setFormData(...formData, `${Math.floor(Math.random() * 900 )}`)
+    
+  // }
+
   const handleSubmit = (event) => {
     
     event.preventDefault();
@@ -32,6 +37,7 @@ export default function Form (props) {
         />
         <input type="submit" value="submit" />
       </form>
+      {/* <button onClick={randomPoke}>Surprise Me</button> */}
     </div>
   );
 };

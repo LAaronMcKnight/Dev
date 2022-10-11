@@ -1,9 +1,23 @@
 // import { useState } from 'react'
 import React from 'react'
+import { useState } from 'react'
 
 export default function PokemonDisplay({ pokemon }) {
+  const [pokemonTeam, setPokemonTeam] = useState([])
 
   const loaded = () => {
+
+    function addToTeam() {
+      const newTeamPoke = {
+        name: pokemon.name,
+        id: pokemon.id,
+        img: pokemon.sprites.front_default
+      }
+      setPokemonTeam([...pokemonTeam, newTeamPoke])
+    }
+
+
+
     return (
       <div className="pokemonDisplay">
         <h1>{pokemon.name} #{pokemon.id}</h1>
@@ -23,6 +37,19 @@ export default function PokemonDisplay({ pokemon }) {
         <h3>Sp. Defense: {pokemon.stats[4].base_stat}</h3>
         <h3>Speed: {pokemon.stats[5].base_stat}</h3>
         <h3>Total: {parseInt(pokemon.stats[0].base_stat) + parseInt(pokemon.stats[1].base_stat) + parseInt(pokemon.stats[2].base_stat) + parseInt(pokemon.stats[3].base_stat) + parseInt(pokemon.stats[4].base_stat) + parseInt(pokemon.stats[5].base_stat)}</h3>
+        <br />
+        <button id='addToTeam' onClick={addToTeam}>Add To Team</button>
+        <br />
+        <div className="pokemonTeam">
+          {pokemonTeam.map((poke, i) => {
+            return(
+              <div className="teamMember" key={i}>
+                <h4>{poke.name}</h4>
+                <img id='pokemonTeamImage' src={poke.img} alt={poke.id}/>
+              </div>
+            )
+          })}
+        </div>
       </div>
     )
   }

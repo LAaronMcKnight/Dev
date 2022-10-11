@@ -52,7 +52,7 @@ body{
 }
 
 .fun {
-  font-size: x-large;
+  font-size: 50px;
   position: absolute;
   top: 10%;
   animation: funFlash running infinite ease-in-out 8s;
@@ -66,7 +66,7 @@ body{
   width: 100vw;
   height: 100vh;
   text-align: center;
-  color: white;
+  color: rgb(224, 208, 208);
   text-shadow: black 2px 2px 2px;
 }
 
@@ -83,6 +83,7 @@ h3:hover {
   background-image: url(https://wallpaperaccess.com/full/5818315.png);
   background-position: center 72%;
   background-size: cover;
+  text-transform: capitalize;
 }
 
 .sprites {
@@ -99,15 +100,35 @@ h3:hover {
   scale: 220%;
 }
 
+.pokemonTeam {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#addToTeam {
+  background-color: rgba(240, 248, 255, 0);
+  border:solid black .4px;
+  font-family: monospace;
+  font-size: large;
+  transition: .5s;
+}
+
+#addToTeam:hover {
+  color: blue;
+  scale: 110%;
+  text-shadow: 1px 1px 1px black;
+}
+
 @keyframes funFlash {
   0%{
     color: red;
-    top: 10%;
+    top: 5%;
   }25%{
     color: purple;
   }50%{
     color: blue;
-    top: 15%;
+    top: 12%;
   }72%{
     color: green;
   }84%{
@@ -116,5 +137,6 @@ h3:hover {
     color: orange;
   }100%{
     color: red;
+    top: 5%;
   }
 }

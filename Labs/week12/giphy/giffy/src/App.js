@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css';
 import Giphy from './components/Giphy'
 import Form from './components/Form'
-// import Button from './components/Button'
+import Button from './components/Button'
 
 
 
@@ -58,16 +58,22 @@ function App() {
     <div className="App">
       <Giphy getRandomGifs={getRandomGifs} randomGifs={randomGifs} searchGifs={searchGifs}/>
       <br />
-
       <Form getGifs={getGifs}/>
       <br />
       {searchGifs ? 
       <div className="searchDisplay">
-        <img id="pic" src={searchGifs.data[0].images.downsized_medium.url} alt={searchGifs.data.title} />
-        <br />
-        <img id="pic" src={searchGifs.data[1].images.downsized_medium.url} alt={searchGifs.data.title} />
-        <br />
-        <img id="pic" src={searchGifs.data[2].images.downsized_medium.url} alt={searchGifs.data.title} />
+        <div className="searchGifs">
+          {searchGifs.data.map((gif, i) => {
+            return(
+              <div className="searchGifResults" key={i}>
+                <img id="pic" src={gif.images.downsized_medium.url} alt={gif.title} />
+                <h4>{gif.title}</h4>
+                <br />
+              </div>
+            )
+          })}
+        </div>
+        <Button color="goldenrod" text="Clear GIFs" buttonWidth="40%" onClick={()=> setSearchGifs(null)} />
       </div>  :
       <h4>Search for a Gif!</h4>
     }
@@ -78,6 +84,12 @@ function App() {
 
 export default App;
 
+{/* <img id="pic" src={searchGifs.data[0].images.downsized_medium.url} alt={searchGifs.data.title} />
+        <br />
+        <img id="pic" src={searchGifs.data[1].images.downsized_medium.url} alt={searchGifs.data.title} />
+        <br />
+        <img id="pic" src={searchGifs.data[2].images.downsized_medium.url} alt={searchGifs.data.title} />
+        <br /> */}
 
 {/* <div className="random">
       {randomGifs && randomGifs.map((randomGif, i) => {

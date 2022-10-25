@@ -56,6 +56,7 @@ body {
   flex-direction: column;
   max-width: 80vw;
   justify-items: space-evenly;
+  align-items: center;
 }
 
 #pic {

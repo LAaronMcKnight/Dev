@@ -10,7 +10,12 @@ const dotenv = require('dotenv')
 
 const mongoose = require('mongoose')
 
+
 const userRouter = require("./routes/api/users");
+
+const itemRouter = require('./routes/api/items')
+
+const usedItemRouter = require('./routes/api/usedItems')
 
 dotenv.config()
 
@@ -37,10 +42,21 @@ app.use(logger("dev"));
 app.use(express.json());
 
 app.use("/api/users", userRouter);
+app.use("/api/items", itemRouter);
+app.use("/api/usedItems", usedItemRouter)
 
-// app.all("*", (request, response) => {
-//   response.send("Undefined route");
-// });
+//     //     //     //
+
+// app.get('/home/seedItems', (req, res) => {
+//   Item.create(itemList.bestBuyList, (err, data) => {
+//     res.redirect('/')
+//   })
+// })
+  
+
+app.all("*", (request, response) => {
+  response.send("Undefined route");
+});
 
 
 

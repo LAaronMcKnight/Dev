@@ -29,9 +29,9 @@ const SignUpForm = ({ setUser }) => {
   const handleConfirmChange = (e) => {
     setConfirm(e.target.value);
   };
-  // const handleErrorChange = (e) => {
-  //   setError(e.target.value);
-  // };
+  const handleErrorChange = (e) => {
+    setError(e.target.value);
+  };
 
   // Create a function to handle form submission
   const handleFormSubmission = async (e) => {
@@ -58,7 +58,7 @@ const SignUpForm = ({ setUser }) => {
   };
   // Reder component
   return (
-    <div>
+    <div id='signUpForm'>
       <div className="form-container">
         <form
           autoComplete="off"
@@ -106,7 +106,7 @@ const SignUpForm = ({ setUser }) => {
             value={confirm}
             required
           />
-          <button type="submit" disabled={disable}>
+          <button id='signUp' type="submit" disabled={disable}>
             SIGN UP
           </button>
         </form>

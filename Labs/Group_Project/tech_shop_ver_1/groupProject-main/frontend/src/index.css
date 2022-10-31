@@ -1,4 +1,406 @@
 :root {
+  background-color: #C2B8D8;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x:hidden;
+}
+
+.headerContent{
+  position: fixed;
+  z-index: +1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black 2px;
+  width: 100vw;
+  height: 8vh;
+  background-color: #DED9EA;
+}
+
+.displayCart {
+  position: relative;
+  bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: 3.4%;
+  margin-bottom: 3px;
+
+  background: 
+    linear-gradient(90deg,#1095c1 50%,#000 0) 
+    var(--_p,100%)/200% no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: .4s;
+}
+
+.displayCart:hover {
+  color: #a99bc7;
+
+  --_p: 0%;
+}
+
+#signOut{
+  position: absolute;
+  top: .5%;
+  right: .5%;
+  border:solid rgba(0, 0, 0, 0.206) .2px;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 2px;
+  background-color:#c9bde18b;
+}
+
+#signUpForm {
+  justify-content: center;
+  align-items: center;
+}
+
+#signUp {
+  width: 30%;
+  align-self: center;
+}
+
+.cartText{
+  order: 2;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.cartIcon {
+  order: 1;
+  padding-left: 20%;
+}
+
+.navBar {
+  display: flex;
+  font-size: 1.5em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  margin-top: 2%;
+}
+
+.sidebar{
+  position:fixed;
+  z-index: +2;
+  top: 38vh;
+  left: 1vw;
+  display: flex;
+  flex-direction: column;
+  /* border:solid black; */
+  height: 26vh;
+  width: 20vw;
+  padding-top: 20px;
+}
+
+.sidebarItem{
+  font-size: 1.8em;
+  width: 20vw;
+  margin-bottom: 34px;
+  transition: .35s;
+  background-color: #DED9EA;
+  
+}
+
+.sidebarItem:hover{
+  /* margin-left: 24px; */
+  transform:scale(1.105)
+}
+
+.home {
+  margin-top: 8.5vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  border:solid black 2px;
+  border-top: 0px;
+  width: 100vw;
+}
+
+.itemListings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 78%;
+}
+
+.itemListing {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  border:solid black 2px;
+  color: black;
+  width: 28%;
+  height: 370px;
+  margin: 5px;
+  background-color: white;
+  transition: .5s;
+}
+
+#itemName{
+  max-width: 90%;
+  height: 12.2%;
+  margin-top: 1.2%;
+  margin-bottom: 2%;
+  justify-self: flex-start;
+}
+
+#pageBreak {
+  background-color: black;
+  height: 1px;
+  width: 92%
+}
+
+#itemCategory {
+  position: absolute;
+  bottom: 1px;
+  width: 80%;
+  right: 8%;
+  
+}
+
+/* #picAndCat{
+  position: relative;
+  top: 5%;
+  height: fit-content;
+} */
+
+
+.itemListing:hover {
+  transform:scale(105%);
+}
+
+.itemListing:hover h4{
+  color: #584175;
+  transition: .5s;
+}
+
+/*********/
+
+.singleItemPage {
+  margin-top: 10vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  border:solid black 1px;
+}
+
+#singleItemDescription{
+  width: 60%;
+  text-align:left;
+}
+
+.usedPage{
+  margin-top: 10vh;
+}
+
+#usedItem {
+  height: 200;
+  width: 300;
+}
+
+.aboutPage {
+  margin-top:  10vh;
+  width: 60%;
+}
+
+.form-container {
+  margin-top: 12vh;
+  border: solid black 2px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+}
+
+label{
+  text-align: center;
+  padding-bottom: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:500;
+}
+
+input, select, textarea{
+  width: 60%;
+  align-self: center;
+  margin-bottom: 8px;
+}
+
+textarea{
+  height: 50px;
+}
+
+#submitUsed{
+  width: 30%;
+  align-self: center;
+}
+
+/* .form-container{
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: fit-content;
+  border:solid black 2px;
+  text-align: left;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input, select{
+  width: 600px;
+  align-self:center;
+}
+
+label {
+  margin-top: 10px;
+} */
+
+/* .form-container{
+  border:solid black;
+  margin-top:  12vh;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px;
+}
+
+form{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+label{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start: auto;
+  grid-row-end: auto;
+}
+
+input{
+  grid-column-start: 2;
+  grid-column-end: 5;
+} */
+
+
+/******* START BY FIXING THE FORM FIELD */
+
+.cartPage {
+  margin-top: 12vh;
+}
+
+
+@media (max-width: 1415px) {
+  .itemListing {
+    width: 40%;
+  }
+  .sidebarItem{
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 1000px) {
+
+  .headerContent{
+    align-items: flex-start;
+  }
+
+  .navbarReturn{
+    margin-left: 8px;
+  }
+
+  .itemListing {
+    width: 60%;
+    /* justify-content: end; */
+    
+  }
+  .itemListings {
+    justify-content: end;
+    margin-right: 10%;
+  }
+
+  .sidebar {
+    left: 4vw;
+  }
+
+  .sidebarItem{
+    width: 30vw;
+  }
+}
+
+/* */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #081105 #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #081105;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #DED9EA;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #DED9EA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
   --white: #ffffff;
   --tan-1: #fbf9f6;
   --tan-2: #e7e2dd;
@@ -110,7 +512,7 @@ input {
   border: 0.1vmin solid var(--tan-3);
   border-radius: 0.5vmin;
   color: var(--text-dark);
-  background-image: none !important; /* prevent lastpass */
+  background-image: none !important; prevent lastpass
   outline: none;
 }
 
@@ -154,3 +556,12 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
+
+.headerContent{
+  display: flex;
+  width: 80%;
+}
+
+.displayCart {
+  align-items: ;
+} */

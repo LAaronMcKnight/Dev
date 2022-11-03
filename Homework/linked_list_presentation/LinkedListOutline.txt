@@ -1,0 +1,74 @@
+Subject Focus: LINKED LISTS 
+
+Why is this a critical part of the interviewing process?: Linked Lists are an entry level way to understand the relationships between Data Structures and Algorigthms. Learning about Linked Lists will further your knowledge on how memory is allocated, accessed, and the resulting effects on Big O Notation, and your programs efficiency. 
+
+How this information can be leveraged to further my abilities as an Engineer?: The fundamental differences learned between Arrays and Linked Lists, will expand your idea of what is happening under the hood of your program. What you learn can be applied in other areas of computer science, allowing you to ask better questions about performance and the relationship between data in your program. 
+
+Sample Interview Question: What are the fundamental differences between a Linked List and an Array, and give an example of a situation in which you would use a Linked List over an Array.
+
+Answer: The fundamental difference between Linked Lists and Arrays, is the way the data set is stored. A Linked List stores the data anywhere it has room, with no relation to the other elements of that data. Whereas an Array utilizes contiguous memory allocation, keeping all of the data together in sequential blocks. These two different methods for storing the data allow for different pros and cons regarding functionality and performance.
+
+
+
+------------- Pitch to Employers -----------
+
+
+
+LINKED LISTS
+
+------ Outline -------
+
+What are Linked Lists?
+
+
+[Insert graphic of linked list]https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png
+
+A Linked List is a linear DATA STRUCTURE, with elements that are not stored in contiguous memory. Each element of the Linked List is called a NODE, and these nodes contain your data, and a pointer to the next NODE on the list.
+
+ // Maybe talk about Data Structures & Algorigthms //
+ 
+ Types of Linked Lists:
+
+SINGLE LINKED LIST 
+
+This is a one way path. To access any of the data, you must start from the HEAD node, otherwise, because this data is not stored contiguously, the computer does not know where to look next. Additionally, once the computer reaches the next node, it does not remember how it got there.
+
+DOUBLE LINKED LIST 
+
+Similar to a linked list, only now each node has a pointer reference to the PERVIOUS node, as well as the NEXT node. This pointer to the previous node allows the computer to know where it came from.
+
+CIRCULAR LINKED LIST 
+
+This is Linked List is a one way path similar to a Single Linked List, only now there is no tail node, rather it loops to the beginning (head node).
+ 
+ 
+ 
+ Are Linked Lists similar to Arrays?
+ 
+ The goal of a Linked List and an Array are the same: to organize data. But the differences are important to understanding the fundamentals of what is happening when you manipulate said data.
+ 
+
+Why choose a Linked List over an Array? 
+
+- With Arrays, unlike Linked Lists, when you insert an item into the middle of an array, all of the items after that must be moved one space in the memory allocated to that array. With Linked Lists, it's a matter of changing one pointer (the previous node's next pointer).
+
+- Arrays take up additional memory, as the upper memory limit of the Array is often not reached. 
+
+In practice you will most often choose to use an Array, as every programming language has built-in functionality to support and manipulate Arrays. 
+
+Linked Lists work better in Big O Notation theory than they do in practice.
+
+For Example:
+
+	Arrays
+	-O(1) for appending
+	-O(n) (n = number of objects in array) for insertion / removal in middle
+	-O(logN) for searches (to the power of)
+	
+	Linked Lists
+	-O(1) for appending
+	-O(1) for insertion / removal in middle
+	-O(n) for searches
+
+ They are important to learn to gain a better understanding of Data Structures & Algorigthms, but very few edge cases exist where you would choose to use a Linked List over an Array.
+
